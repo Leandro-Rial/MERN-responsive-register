@@ -1,0 +1,100 @@
+.login-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-page form {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 30px;
+    width: 900px;
+}
+
+.login-page form h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.login-page form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 5px 0;
+}
+
+.row button {
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 15px 20px;
+    width: 150px;
+    border: none;
+    background: #000;
+    color: #fff;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.row button:hover {
+    background: #ddd;
+    color: #000;
+}
+
+.row a {
+    font-size: 1.6rem;
+    color: orange;
+}
+
+@media screen and (max-width: 1000px) {
+    .login-page form {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .login-page form {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-page form {
+        width: 300px;
+    }
+
+    .row button {
+        font-size: 1.4rem;
+        font-weight: 100;
+        padding: 15px 20px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .login-page form {
+        width: 250px;
+    }
+
+    .row button {
+        font-size: 1.4rem;
+        font-weight: 100;
+        padding: 15px 20px;
+        width: 100px;
+    }
+
+    .login-page form input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #000;
+        margin: 20px 0;
+    }   
+}
